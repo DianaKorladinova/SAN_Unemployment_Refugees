@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <div onclick="letThatBabyRip()" style="font-size: 196px;" id="rollOut"
+    onMouseOver="this.style.cursor='pointer';this.style.color=`#${Math.floor(Math.random()*16777215).toString(16)}`">
+    Autobots <i>ass</i>emble
+</div>
+  <script>
+    function letThatBabyRip() {
+      const elem = document.getElementById("rollOut");
+      elem.innerHTML = "Vrummmm prprprprprprpr";
+      console.log("Vrum vrum")
+      let links = [];
+      for (let year = 2008; year <= 2023; year++) {
+        for (let month = 1; month <= 12; month++) {
+          if (year == 2023 && month == 12) continue;
+          let monthStr = month.toLocaleString('en-US', {
+            minimumIntegerDigits: 2,
+            useGrouping: false
+          })
+          links.push({
+            link: `https://data.mpsv.cz/od/soubory/nezamestnanost-mesicni/nezamestnanost-mesicni-${monthStr}-${year}.json`,
+            month, year
+          })
+        }
+      }
+
+      async function downloadAll(links) {
+        let dataArr = []
+        for (const obj of links) {
+          const { link, month, year } = obj
+          await fetch(link)
+            .then(res => res.json())
+            .then(data =>
+              dataArr.push({ year, month, data }))
+            .catch(err => { throw err })
+          // console.log(link)
+        }
+        return dataArr
+      }
+
+      function downloadTextFile(text, name) {
+        const a = document.createElement('a');
+        const type = name.split(".").pop();
+        a.href = URL.createObjectURL(new Blob([text], { type: `text/${type === "txt" ? "plain" : type}` }));
+        a.download = name;
+        a.click();
+      }
+
+      let fileName = 'unemployment.json'
+      downloadAll(links).then(data => {
+        downloadTextFile(JSON.stringify(data), fileName);
+      })
+
+    }
+
+  </script>
+</body>
+
+</html>

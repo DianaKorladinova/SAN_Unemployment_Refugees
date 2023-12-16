@@ -1,0 +1,79 @@
+Kód okresu,Název okresu,Zkratka názvu okresu,Kód NUTS4 okresu,Název kraje
+3201,Benešov,,CZ0201,Středočeský kraj
+3202,Beroun,,CZ0202,Středočeský kraj
+3701,Blansko,,CZ0641,Jihomoravský kraj
+3702,Brno-město,,CZ0642,Jihomoravský kraj
+3703,Brno-venkov,,CZ0643,Jihomoravský kraj
+3801,Bruntál,,CZ0801,Moravskoslezský kraj
+3704,Břeclav,,CZ0644,Jihomoravský kraj
+3402,Cheb,,CZ0411,Karlovarský kraj
+3503,Chomutov,,CZ0422,Ústecký kraj
+3603,Chrudim,,CZ0531,Pardubický kraj
+3501,Česká Lípa,,CZ0511,Liberecký kraj
+3301,České Budějovice,,CZ0311,Jihočeský kraj
+3302,Český Krumlov,,CZ0312,Jihočeský kraj
+3502,Děčín,,CZ0421,Ústecký kraj
+3401,Domažlice,,CZ0321,Plzeňský kraj
+3802,Frýdek-Místek,,CZ0802,Moravskoslezský kraj
+3601,Havlíčkův Brod,,CZ0631,Kraj Vysočina
+3100,Hlavní město Praha,,CZ0100,Hlavní město Praha
+3706,Hodonín,,CZ0645,Jihomoravský kraj
+3602,Hradec Králové,,CZ0521,Královéhradecký kraj
+3504,Jablonec nad Nisou,,CZ0512,Liberecký kraj
+3811,Jeseník,,CZ0711,Olomoucký kraj
+3604,Jičín,,CZ0522,Královéhradecký kraj
+3707,Jihlava,,CZ0632,Kraj Vysočina
+3303,Jindřichův Hradec,,CZ0313,Jihočeský kraj
+3403,Karlovy Vary,,CZ0412,Karlovarský kraj
+3803,Karviná,,CZ0803,Moravskoslezský kraj
+3203,Kladno,,CZ0203,Středočeský kraj
+3404,Klatovy,,CZ0322,Plzeňský kraj
+3204,Kolín,,CZ0204,Středočeský kraj
+3708,Kroměříž,,CZ0721,Zlínský kraj
+3205,Kutná Hora,,CZ0205,Středočeský kraj
+3505,Liberec,,CZ0513,Liberecký kraj
+3506,Litoměřice,,CZ0423,Ústecký kraj
+3507,Louny,,CZ0424,Ústecký kraj
+3206,Mělník,,CZ0206,Středočeský kraj
+3207,Mladá Boleslav,,CZ0207,Středočeský kraj
+3508,Most,,CZ0425,Ústecký kraj
+3605,Náchod,,CZ0523,Královéhradecký kraj
+3804,Nový Jičín,,CZ0804,Moravskoslezský kraj
+3208,Nymburk,,CZ0208,Středočeský kraj
+3805,Olomouc,,CZ0712,Olomoucký kraj
+3806,Opava,,CZ0805,Moravskoslezský kraj
+3807,Ostrava-město,,CZ0806,Moravskoslezský kraj
+3606,Pardubice,,CZ0532,Pardubický kraj
+3304,Pelhřimov,,CZ0633,Kraj Vysočina
+3305,Písek,,CZ0314,Jihočeský kraj
+3406,Plzeň-jih,,CZ0324,Plzeňský kraj
+3405,Plzeň-město,,CZ0323,Plzeňský kraj
+3407,Plzeň-sever,,CZ0325,Plzeňský kraj
+3306,Prachatice,,CZ0315,Jihočeský kraj
+3209,Praha-východ,,CZ0209,Středočeský kraj
+3210,Praha-západ,,CZ020A,Středočeský kraj
+3709,Prostějov,,CZ0713,Olomoucký kraj
+3808,Přerov,,CZ0714,Olomoucký kraj
+3211,Příbram,,CZ020B,Středočeský kraj
+3212,Rakovník,,CZ020C,Středočeský kraj
+3408,Rokycany,,CZ0326,Plzeňský kraj
+3607,Rychnov nad Kněžnou,,CZ0524,Královéhradecký kraj
+3608,Semily,,CZ0514,Liberecký kraj
+3409,Sokolov,,CZ0413,Karlovarský kraj
+3307,Strakonice,,CZ0316,Jihočeský kraj
+3609,Svitavy,,CZ0533,Pardubický kraj
+3809,Šumperk,,CZ0715,Olomoucký kraj
+3308,Tábor,,CZ0317,Jihočeský kraj
+3410,Tachov,,CZ0327,Plzeňský kraj
+3509,Teplice,,CZ0426,Ústecký kraj
+3610,Trutnov,,CZ0525,Královéhradecký kraj
+3710,Třebíč,,CZ0634,Kraj Vysočina
+3711,Uherské Hradiště,,CZ0722,Zlínský kraj
+3510,Ústí nad Labem,,CZ0427,Ústecký kraj
+3611,Ústí nad Orlicí,,CZ0534,Pardubický kraj
+9999,území Hlavního města Prahy,,CZ0100,Hlavní město Praha
+3810,Vsetín,,CZ0723,Zlínský kraj
+3712,Vyškov,,CZ0646,Jihomoravský kraj
+3705,Zlín,,CZ0724,Zlínský kraj
+3713,Znojmo,,CZ0647,Jihomoravský kraj
+3714,Žďár nad Sázavou,,CZ0635,Kraj Vysočina
