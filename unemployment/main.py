@@ -36,18 +36,22 @@ with open('unemployment.json', 'r') as file:
         for obj in data["polozky"]:
             okres = obj['okres'].split('/')[1]
             uchazeciOZamestnaniUoZ = obj['uchazeciOZamestnaniUoZ']
+            uchazeciOZamestnaniUoZZeny = obj['uchazeciOZamestnaniUoZZeny']
             noveHlaseniUchazeci = obj['noveHlaseniUchazeci']
             noveHlasenaAUvolnenaVPM = obj['noveHlasenaAUvolnenaVPM']
             obsazenaAZrusenaVPM = obj['obsazenaAZrusenaVPM']
             absolventiSkolAMladistvi = obj['absolventiSkolAMladistvi']
             result_obj = {"kraj": NUTS3_name2abbrev[codes[okres]], "month": mesic, "year": rok,
-                          'uchazeciOZamestnaniUoZ': uchazeciOZamestnaniUoZ, 'noveHlaseniUchazeci': noveHlaseniUchazeci,
+                          'uchazeciOZamestnaniUoZ': uchazeciOZamestnaniUoZ,
+                          'uchazeciOZamestnaniUoZZeny': uchazeciOZamestnaniUoZZeny,
+                          'uchazeciOZamestnaniUoZMuzi': uchazeciOZamestnaniUoZ - uchazeciOZamestnaniUoZZeny,
+                          'noveHlaseniUchazeci': noveHlaseniUchazeci,
                           'noveHlasenaAUvolnenaVPM': noveHlasenaAUvolnenaVPM,
                           'obsazenaAZrusenaVPM': obsazenaAZrusenaVPM,
                           'absolventiSkolAMladistvi': absolventiSkolAMladistvi}
             results.append(result_obj)
 
-columns = ["kraj", "month", "year", 'uchazeciOZamestnaniUoZ', 'noveHlaseniUchazeci',
+columns = ["kraj", "month", "year", 'uchazeciOZamestnaniUoZ','uchazeciOZamestnaniUoZZeny','uchazeciOZamestnaniUoZMuzi', 'noveHlaseniUchazeci',
            'noveHlasenaAUvolnenaVPM', 'obsazenaAZrusenaVPM', 'absolventiSkolAMladistvi']
 with open('unemployment.csv', 'w', encoding='UTF8', newline='') as f:
     writer = csv.DictWriter(f, fieldnames=columns)
